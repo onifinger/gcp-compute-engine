@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>伝言板</title>
+    <title>s-TaskPost</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/static/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/static/css/custom.css" media="screen">
 </head>
 
 <body>
@@ -17,11 +18,11 @@
         <!-- Main -->
         <div class="jumbotron">
             <blockquote>
-                <p>{{ name }} さんからのメッセージを受け取りました</p>
+                <p>{{ name }} さんから依頼事項がPostされました</p>
                 <small>{{ timestamp }}</small>
             </blockquote>
             <form action={{ url_for( 'messages') }}>
-                <input class="btn btn-primary btn-lg" type=submit value='伝言板にもどる'>
+                <input class="btn btn-primary btn-lg" type=submit value='Task一覧にもどる'>
             </form>
         </div>
     </div>
